@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+*:focus {
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+
+    overflow-x: hidden;
+}
+
+.list-checkmark {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        font-size: 1.8rem;
+    }
+
+    ion-icon {
+        font-size: 3rem;
+        color: $main_color;
+    }
+
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $main_color_shadow;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.heading {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn{
+    background-color: $main_color;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $main_color_shadow;
+    }
+}
+
+.btn-outline {
+    background-color: #fff;
+    color: #555;
+    margin-left: 1.6rem;
+
+    &:hover {
+        background-color: inherit;
+        box-shadow: inset 0 0 0 3px #fff;
+    }
+}

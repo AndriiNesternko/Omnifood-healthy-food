@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    align-items: center;
+    background-color: $main_bg_color;
+
+    &__logo {
+        height: 2.2rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        &:active,
+        &:hover {
+            color: $main_color_shadow;
+        }
+    }
+
+    &__btn {
+        &:link,
+        &:visited {
+            padding: 1.2rem 2.4rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+
+    &__mobile-btn {
+        border: none;
+        background: none;
+        display: none;
+    }
+
+    &__mobile-icon {
+        height: 4.8rem;
+        width: 4.8rem;
+        color: #333;
+
+        &[name="close-outline"] {
+            display: none;
+        }
+    }
+}
